@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio with a Contact Form with Validation</title>
+
+    <!-- Meta Description -->
+    <meta name="description"
+        content="A professional portfolio with a fully functional contact form, featuring real-time validation. Built for an engaging and user-friendly experience.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="portfolio, web developer, UI developer, contact form, form validation, front-end development, Angular, Tailwind CSS, JavaScript">
+
+    <!-- Author -->
+    <meta name="author" content="Lavanya Chandran">
+
+</head>
+
+<body style="padding-bottom:60px;">
+    <!-- Page Header -->
+    <header>
+        <h1 style="text-align: center;">Portfolio with a contact form with validation</h1>
+    </header>
+  
+    <!-- Navigation Menu -->
+    <nav role="navigation" style="text-align: center;">
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: inline-block; margin: 0 15px;">
+                <a style="text-decoration: none; color: black;" href="index.html">About</a>
+            </li>
+            <li style="display: inline-block; margin: 0 15px;">
+                <a style="text-decoration: none; color: black;" href="projects.html">Projects</a>
+            </li>
+            <li style="display: inline-block; margin: 0 15px;">
+                <a style="text-decoration: none; color: white;background-color: brown;padding:5px;"
+                    href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <hr>
+
+      <!-- Contact Me Form Section -->
+<section id="contact">
+    <h2 style="text-transform: capitalize; text-align: center;">Contact Me</h2>
+
+    <form action="index.html">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" name="name" placeholder="Enter your name..." 
+                   required minlength="3" pattern="[A-Za-z ]{3,}" title="Name must be at least 3 letters long and contain only letters and spaces.">
+            <br> <br>
+
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address..." required>
+            <br> <br>
+
+            <label for="subject">Subject</label> <br>
+            <input type="text" id="subject" name="subject" placeholder="Enter subject here..." 
+                   required minlength="5" title="Subject must be at least 5 characters long.">
+            <br> <br>
+
+            <label for="message">Message</label> <br>
+            <textarea id="message" name="message" placeholder="Enter your message..." rows="5" 
+                      required minlength="10" title="Message must be at least 10 characters long."></textarea>
+            <br> <br>
+
+            <button style="background-color: blue;color:#fff;padding:5px;border:0px;" type="submit">Submit</button>
+        </fieldset>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer 
+    style="text-align: center; 
+           position: fixed; 
+           bottom: 0; 
+           left: 50%; 
+           transform: translateX(-50%); 
+           width: 100%; 
+           padding: 10px; 
+           background: #f8f9fa;">
+    <p>&copy; 2025 Lavanya C S. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
